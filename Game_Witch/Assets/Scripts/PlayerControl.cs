@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -20,6 +21,14 @@ public class PlayerControl : MonoBehaviour
     private void Start()
     {
         InvokeRepeating(nameof(AnimateSprite), 0.15f, 0.15f);
+    }
+
+    private void OnEnable()
+    {
+        Vector3 position = transform.position;
+        position.y = 0f;
+        transform.position = position;
+        direction = Vector3.zero;
     }
 
     void Update()
@@ -59,6 +68,8 @@ public class PlayerControl : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstacle")
         {
+            LifePlayer.life -= 1;
+
             FindObjectOfType<GameMeneger>().GameOver();
         }
         else if (collision.gameObject.tag == "Score")
