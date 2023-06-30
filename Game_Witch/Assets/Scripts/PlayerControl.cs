@@ -77,5 +77,39 @@ public class PlayerControl : MonoBehaviour
             FindObjectOfType<GameMeneger>().IncreaseScore();
             
         }
+        else if (collision.gameObject.tag == "Poison")
+        {
+            LifePlayer.life -= 1;
+
+            FindObjectOfType<GameMeneger>().GameOver();
+        }
+        else if (collision.gameObject.tag == "Heart")
+        {
+            FindObjectOfType<GameMeneger>().Heart();
+        }
+        else if (collision.gameObject.tag == "SpeedUp") 
+        {
+            FindObjectOfType<GameMeneger>().SpeedUp();
+        }
+        else if (collision.gameObject.tag == "SpeedDown")
+        {
+            FindObjectOfType<GameMeneger>().SpeedDown();
+        }
+        else if (collision.gameObject.tag == "cloud")
+        {
+            LifePlayer.life -= 1;
+
+            direction = Vector3.up * strength;
+
+            FindObjectOfType<GameMeneger>().GameOver();
+        }
+        else if (collision.gameObject.tag == "cloudDown")
+        {
+            LifePlayer.life -= 1;
+
+            direction = Vector3.down * strength;
+
+            FindObjectOfType<GameMeneger>().GameOver();
+        }
     }
 }

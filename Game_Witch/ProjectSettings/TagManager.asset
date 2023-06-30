@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Score
   - Obstacle
+  - Poison
+  - Heart
+  - SpeedUp
+  - SpeedDown
+  - cloud
+  - cloudDown
   layers:
   - Default
   - TransparentFX

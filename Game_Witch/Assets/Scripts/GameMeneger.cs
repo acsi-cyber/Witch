@@ -8,6 +8,7 @@ public class GameMeneger : MonoBehaviour
     public PlayerControl player;
     public Text scoreText;
     public GameObject playButton;
+    public GameObject exitButton;
     public GameObject gameOver;
 
     private int score;
@@ -25,6 +26,7 @@ public class GameMeneger : MonoBehaviour
         scoreText.text = score.ToString();
 
         playButton.SetActive(false);
+        exitButton.SetActive(false);
         gameOver.SetActive(false);
 
         Time.timeScale = 1f;
@@ -51,14 +53,45 @@ public class GameMeneger : MonoBehaviour
             LifePlayer.life = 3;
             gameOver.SetActive(true);
             playButton.SetActive(true);
+            exitButton.SetActive(true);
             Pause();
         }
         Debug.Log(LifePlayer.life);
+    }
+
+    public void Heart()
+    {
+        if (LifePlayer.life < 3)
+        {
+            LifePlayer.life += 1;
+        }
+    }
+
+    public void SpeedUp()
+    {
+        Time.timeScale = 2f;
+        Invoke("SpeedNormal", 8);
+    }
+
+    public void SpeedDown()
+    {
+        Time.timeScale = 0.5f;
+        Invoke("SpeedNormal", 2);
+    }
+
+    void SpeedNormal()
+    {
+        Time.timeScale = 1f;
     }
 
     public void IncreaseScore()
     {
         score++;
         scoreText.text = score.ToString();
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Destroe : MonoBehaviour
 {
-    public GameObject prefab;
+    public GameObject destroyPrefab;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
