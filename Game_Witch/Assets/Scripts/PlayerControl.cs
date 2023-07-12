@@ -18,10 +18,10 @@ public class PlayerControl : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void Start()
+    /*private void Start()
     {
         InvokeRepeating(nameof(AnimateSprite), 0.15f, 0.15f);
-    }
+    }*/
 
     private void OnEnable()
     {
@@ -52,7 +52,7 @@ public class PlayerControl : MonoBehaviour
         transform.position += direction * Time.deltaTime;
     }
 
-    private void AnimateSprite()
+    /*private void AnimateSprite()
     {
         spriteIndex++;
 
@@ -62,7 +62,7 @@ public class PlayerControl : MonoBehaviour
         }
 
         spriteRenderer.sprite = sprites[spriteIndex];
-    }
+    }*/
 
     void OnTriggerEnter2D(Collider2D collision)
     {

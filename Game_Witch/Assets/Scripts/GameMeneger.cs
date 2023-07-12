@@ -11,7 +11,7 @@ public class GameMeneger : MonoBehaviour
     public GameObject exitButton;
     public GameObject gameOver;
 
-    private int score;
+    public int score = 20;
 
     private void Awake()
     {
@@ -22,7 +22,6 @@ public class GameMeneger : MonoBehaviour
 
     public void Play()
     {
-        score = 0;
         scoreText.text = score.ToString();
 
         playButton.SetActive(false);
@@ -86,12 +85,17 @@ public class GameMeneger : MonoBehaviour
 
     public void IncreaseScore()
     {
-        score++;
+        score--;
         scoreText.text = score.ToString();
+        if (score == 0)
+        {
+
+        }
     }
 
     public void QuitGame()
     {
         Application.Quit();
     }
+
 }

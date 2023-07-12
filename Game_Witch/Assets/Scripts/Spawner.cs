@@ -5,6 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject prefab;
+    [SerializeField] GameObject gameObject;
 
     public float spawnRate = 1f;
     public float minHeight = -1f;
@@ -22,7 +23,7 @@ public class Spawner : MonoBehaviour
 
     private void Spawn()
     {
-        GameObject pipes = Instantiate(prefab, transform.position, Quaternion.identity);
+        GameObject pipes = Instantiate(prefab, transform.position, Quaternion.identity, gameObject.transform);
         pipes.transform.position += Vector3.up * Random.Range(minHeight, maxHeight);
     }
 }
