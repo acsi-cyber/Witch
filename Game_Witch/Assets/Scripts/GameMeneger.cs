@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameMeneger : MonoBehaviour
 {
@@ -17,12 +18,14 @@ public class GameMeneger : MonoBehaviour
     public GameObject c;
     public GameObject d;
 
-    public int score_1 = 20;
-    public int score_2 = 20;
+    public int score_1;
+    public int score_2;
+    private int score1Storage;
+    private int score2Storage;
 
     private void Awake()
     {
-        Application.targetFrameRate = 120;
+        Application.targetFrameRate = 80;
 
         Pause();
     }
@@ -40,6 +43,9 @@ public class GameMeneger : MonoBehaviour
         c.SetActive(true);
         d.SetActive(true);
 
+        score1Storage = score_1;
+        score2Storage = score_2;
+
         Time.timeScale = 1f;
         player.enabled = true;
 
@@ -55,6 +61,11 @@ public class GameMeneger : MonoBehaviour
     {
         Time.timeScale = 0f;
         player.enabled = false;
+        if (score_1 < 3 || score_2 < 3)
+        {
+            score_1 = score1Storage;
+            score_2 = score2Storage;
+        }
     }
 
     public void GameOver()
@@ -110,6 +121,7 @@ public class GameMeneger : MonoBehaviour
             b.SetActive(false);
             c.SetActive(false);
             d.SetActive(false);
+            FindObjectOfType<DisableButton>().DisableButton1();
         }
     }
 
@@ -128,7 +140,13 @@ public class GameMeneger : MonoBehaviour
             b.SetActive(false);
             c.SetActive(false);
             d.SetActive(false);
+            FindObjectOfType<DisableButton>().DisableButton1();
         }
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()

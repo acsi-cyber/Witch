@@ -77,6 +77,11 @@ public class PlayerControl : MonoBehaviour
             FindObjectOfType<GameMeneger>().IncreaseScore();
             
         }
+        else if (collision.gameObject.tag == "LoadMainMenu")
+        {
+            FindObjectOfType<GameMeneger>().LoadMainMenu();
+
+        }
         else if (collision.gameObject.tag == "Score_2")
         {
             FindObjectOfType<GameMeneger>().IncreaseScore_2();
