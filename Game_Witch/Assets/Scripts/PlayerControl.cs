@@ -77,6 +77,11 @@ public class PlayerControl : MonoBehaviour
             FindObjectOfType<GameMeneger>().IncreaseScore();
             
         }
+        else if (collision.gameObject.tag == "Score_2")
+        {
+            FindObjectOfType<GameMeneger>().IncreaseScore_2();
+
+        }
         else if (collision.gameObject.tag == "Poison")
         {
             LifePlayer.life -= 1;

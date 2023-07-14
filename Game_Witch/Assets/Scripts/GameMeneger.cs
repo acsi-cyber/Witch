@@ -6,12 +6,19 @@ using UnityEngine.UI;
 public class GameMeneger : MonoBehaviour
 {
     public PlayerControl player;
-    public Text scoreText;
+    public Text scoreText_1;
+    public Text scoreText_2;
     public GameObject playButton;
     public GameObject exitButton;
     public GameObject gameOver;
+    public GameObject timeLine;
+    public GameObject a;
+    public GameObject b;
+    public GameObject c;
+    public GameObject d;
 
-    public int score = 20;
+    public int score_1 = 20;
+    public int score_2 = 20;
 
     private void Awake()
     {
@@ -22,11 +29,16 @@ public class GameMeneger : MonoBehaviour
 
     public void Play()
     {
-        scoreText.text = score.ToString();
+        scoreText_1.text = score_1.ToString();
+        scoreText_2.text = score_2.ToString();
 
         playButton.SetActive(false);
         exitButton.SetActive(false);
         gameOver.SetActive(false);
+        a.SetActive(true);
+        b.SetActive(true);
+        c.SetActive(true);
+        d.SetActive(true);
 
         Time.timeScale = 1f;
         player.enabled = true;
@@ -85,11 +97,37 @@ public class GameMeneger : MonoBehaviour
 
     public void IncreaseScore()
     {
-        score--;
-        scoreText.text = score.ToString();
-        if (score == 0)
+        if (score_1 != 0)
         {
+            score_1--;
+        }
 
+        scoreText_1.text = score_1.ToString();
+        if (score_1 == 0 & score_2 == 0)
+        {
+            timeLine.SetActive(true);
+            a.SetActive(false);
+            b.SetActive(false);
+            c.SetActive(false);
+            d.SetActive(false);
+        }
+    }
+
+    public void IncreaseScore_2()
+    {
+        if (score_2 != 0)
+        {
+            score_2--;
+        }
+
+        scoreText_2.text = score_2.ToString();
+        if (score_1 == 0 & score_2 == 0)
+        {
+            timeLine.SetActive(true);
+            a.SetActive(false);
+            b.SetActive(false);
+            c.SetActive(false);
+            d.SetActive(false);
         }
     }
 
