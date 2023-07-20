@@ -121,7 +121,6 @@ public class GameMeneger : MonoBehaviour
             b.SetActive(false);
             c.SetActive(false);
             d.SetActive(false);
-            FindObjectOfType<DisableButton>().DisableButton1();
         }
     }
 
@@ -140,12 +139,12 @@ public class GameMeneger : MonoBehaviour
             b.SetActive(false);
             c.SetActive(false);
             d.SetActive(false);
-            FindObjectOfType<DisableButton>().DisableButton1();
         }
     }
 
     public void LoadMainMenu()
     {
+        LevelSkrol.instance.idEndGame();
         SceneManager.LoadScene("MainMenu");
     }
 
