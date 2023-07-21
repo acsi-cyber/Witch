@@ -142,12 +142,6 @@ public class GameMeneger : MonoBehaviour
         }
     }
 
-    public void LoadMainMenu()
-    {
-        LevelSkrol.instance.idEndGame();
-        SceneManager.LoadScene("MainMenu");
-    }
-
     public void QuitGame()
     {
         Application.Quit();

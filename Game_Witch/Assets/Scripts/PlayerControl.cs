@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -79,7 +80,8 @@ public class PlayerControl : MonoBehaviour
         }
         else if (collision.gameObject.tag == "LoadMainMenu")
         {
-            FindObjectOfType<GameMeneger>().LoadMainMenu();
+            LevelSkrol.instance.idEndGame();
+            SceneManager.LoadScene("MainMenu");
 
         }
         else if (collision.gameObject.tag == "Score_2")

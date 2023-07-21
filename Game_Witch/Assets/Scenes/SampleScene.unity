@@ -3179,11 +3179,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1111023762}
-  scoreText: {fileID: 1391350314}
+  scoreText_1: {fileID: 0}
+  scoreText_2: {fileID: 0}
   playButton: {fileID: 1162414249}
   exitButton: {fileID: 208087450}
   gameOver: {fileID: 1301862774}
-  score: 20
+  timeLine: {fileID: 0}
+  a: {fileID: 0}
+  b: {fileID: 0}
+  c: {fileID: 0}
+  d: {fileID: 0}
+  score_1: 0
+  score_2: 0
 --- !u!1 &1162414249
 GameObject:
   m_ObjectHideFlags: 0
