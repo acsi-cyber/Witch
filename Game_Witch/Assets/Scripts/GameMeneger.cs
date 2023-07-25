@@ -144,7 +144,7 @@ public class GameMeneger : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene("MainMenu");
     }
 
 }

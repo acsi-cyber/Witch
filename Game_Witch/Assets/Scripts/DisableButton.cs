@@ -32,30 +32,23 @@ public class DisableButton : MonoBehaviour
 
         switch (levelComplete)
         {
-            case 1:
-                button1_2.interactable = true;
-                break;
             case 2:
                 button1_2.interactable = true;
-                button1_3.interactable = true;
                 break;
             case 3:
                 button1_2.interactable = true;
                 button1_3.interactable = true;
-                button1_4.interactable = true;
                 break;
             case 4:
                 button1_2.interactable = true;
                 button1_3.interactable = true;
                 button1_4.interactable = true;
-                button2_1.interactable = true;
                 break;
             case 5:
                 button1_2.interactable = true;
                 button1_3.interactable = true;
                 button1_4.interactable = true;
                 button2_1.interactable = true;
-                button2_2.interactable = true;
                 break;
             case 6:
                 button1_2.interactable = true;
@@ -63,9 +56,16 @@ public class DisableButton : MonoBehaviour
                 button1_4.interactable = true;
                 button2_1.interactable = true;
                 button2_2.interactable = true;
-                button2_3.interactable = true;
                 break;
             case 7:
+                button1_2.interactable = true;
+                button1_3.interactable = true;
+                button1_4.interactable = true;
+                button2_1.interactable = true;
+                button2_2.interactable = true;
+                button2_3.interactable = true;
+                break;
+            case 8:
                 button1_2.interactable = true;
                 button1_3.interactable = true;
                 button1_4.interactable = true;

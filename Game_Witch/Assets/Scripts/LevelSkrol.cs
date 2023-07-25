@@ -25,6 +25,6 @@ public class LevelSkrol : MonoBehaviour
     {
         if (levelComplete < sceneIndex)
             PlayerPrefs.SetInt("LevelComplete", sceneIndex);
-        SceneManager.LoadScene(sceneIndex + 1);
+        //SceneManager.LoadScene(sceneIndex + 1);//
     }
 }

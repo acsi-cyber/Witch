@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 7753081213994485583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.79, y: 1.89, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2129139687, guid: 3811ee297f462754191a2b52926b8189, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 608a6eb60f934114e8758012face44fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,13 +102,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 1114913002, guid: 3811ee297f462754191a2b52926b8189, type: 3}
-  - {fileID: 601602744, guid: 3811ee297f462754191a2b52926b8189, type: 3}
-  - {fileID: -760581843, guid: 3811ee297f462754191a2b52926b8189, type: 3}
-  - {fileID: 379016464, guid: 3811ee297f462754191a2b52926b8189, type: 3}
-  - {fileID: 1599384390, guid: 3811ee297f462754191a2b52926b8189, type: 3}
-  - {fileID: 159670475, guid: 3811ee297f462754191a2b52926b8189, type: 3}
-  - {fileID: -679600323, guid: 3811ee297f462754191a2b52926b8189, type: 3}
+  - {fileID: 21300000, guid: 608a6eb60f934114e8758012face44fb, type: 3}
+  - {fileID: 21300000, guid: 4adc1917564792f439983a9782bb5d0f, type: 3}
+  - {fileID: 21300000, guid: 543f811ade9d56e4a917580d3c56a635, type: 3}
 --- !u!50 &7753081213994485584
 Rigidbody2D:
   serializedVersion: 4
@@ -143,18 +139,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.017889261, y: -0.017890692}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6, y: 1.38}
+    oldSize: {x: 6.47, y: 5.16}
     newSize: {x: 1.6, y: 1.38}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6, y: 1.38}
+  m_Size: {x: 6.180017, y: 4.8150144}
   m_EdgeRadius: 0
 --- !u!114 &7250041743097387565
 MonoBehaviour:

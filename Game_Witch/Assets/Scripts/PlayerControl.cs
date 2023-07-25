@@ -81,7 +81,6 @@ public class PlayerControl : MonoBehaviour
         else if (collision.gameObject.tag == "LoadMainMenu")
         {
             LevelSkrol.instance.idEndGame();
-            SceneManager.LoadScene("MainMenu");
 
         }
         else if (collision.gameObject.tag == "Score_2")

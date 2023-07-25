@@ -15,7 +15,7 @@ public class BoomAnimator : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating(nameof(AnimateSprite), 0.10f, 0.10f);
+        InvokeRepeating(nameof(AnimateSprite), 0.1f, 0.1f);
     }
 
     private void AnimateSprite()
