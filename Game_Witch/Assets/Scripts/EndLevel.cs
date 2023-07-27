@@ -7,8 +7,11 @@ public class EndLevel : MonoBehaviour
 {
     public GameObject size1;
     public GameObject size2;
+    public GameObject scene1;
+    public GameObject scene2;
     public float i;
     public bool update = false;
+    int levelComplete;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -37,6 +40,18 @@ public class EndLevel : MonoBehaviour
         }
         else if (i > 1f & SceneManager.GetActiveScene().buildIndex == 1)
         {
+            levelComplete = PlayerPrefs.GetInt("LevelComplete");
+            Debug.Log(levelComplete);
+            if (levelComplete == 5)
+            {
+                scene1.SetActive(false);
+                scene2.SetActive(true);
+            }
+            else if (levelComplete != 5)
+            {
+                scene1.SetActive(true);
+                scene2.SetActive(false);
+            }
             size1.transform.localScale = new Vector3(23f, i, 1f);
             size2.transform.localScale = new Vector3(23f, i, 1f);
             i -= 0.1f;

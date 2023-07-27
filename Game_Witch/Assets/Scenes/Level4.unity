@@ -6982,6 +6982,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size1: {fileID: 289614842}
   size2: {fileID: 145357188}
+  scene1: {fileID: 0}
+  scene2: {fileID: 0}
   i: 0
   update: 0
 --- !u!61 &1944648795
@@ -7117,8 +7119,8 @@ MonoBehaviour:
   b: {fileID: 7377469703684644861, guid: eafcc0419c985ac4a975ce75bd37176d, type: 3}
   c: {fileID: 7753081213994485583, guid: c46ac6308b3d0964eaf1a288cf26e429, type: 3}
   d: {fileID: 9178755493118431644, guid: 8c7841397bd7b74448952477a3040d49, type: 3}
-  score_1: 20
-  score_2: 20
+  score_1: 3
+  score_2: 3
 --- !u!4 &1995752433
 Transform:
   m_ObjectHideFlags: 0
@@ -7391,7 +7393,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e05b4f5926368b94ca48879ceecb6426, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.59234726, g: 0.34825563, b: 0.8113208, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
