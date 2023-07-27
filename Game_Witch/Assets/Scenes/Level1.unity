@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -100}
+  m_AnchoredPosition: {x: 100, y: -8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &65044984
@@ -180,7 +180,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 1
   m_CellSize: {x: 250, y: 250}
@@ -1309,7 +1309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &727964569
 Transform:
   m_ObjectHideFlags: 0
@@ -1318,7 +1318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727964568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.87, y: -2.7607746, z: 0.18539996}
+  m_LocalPosition: {x: 5, y: 6, z: 0.18539996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1337,11 +1337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06c154959f26a3409faa4ce2a69f067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8090300192444746352, guid: eda0cfe6f19b0814d80612025de7b104, type: 3}
-  Object: {fileID: 0}
+  prefab: {fileID: 1474552325857961675, guid: cf2db69f6419a3e4ba0272613557547b, type: 3}
+  Object: {fileID: 854020942}
   spawnRate: 12
   minHeight: -4
-  maxHeight: 4
+  maxHeight: 3
 --- !u!1 &741784843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,7 +1937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1081202405
 Transform:
   m_ObjectHideFlags: 0
@@ -1946,7 +1946,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081202404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.87, y: -2.7607746, z: 0.18539996}
+  m_LocalPosition: {x: 5, y: 6, z: 0.18539996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1965,11 +1965,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06c154959f26a3409faa4ce2a69f067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2396924439836952437, guid: e6a4551e7f5f305478e1ff0ac18c41f8, type: 3}
-  Object: {fileID: 0}
+  prefab: {fileID: 7501513101878943223, guid: 24438b8ad3aedfc4eb35790651233218, type: 3}
+  Object: {fileID: 854020942}
   spawnRate: 15
   minHeight: -4
-  maxHeight: 4
+  maxHeight: 3
 --- !u!1 &1111023758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,6 +2074,7 @@ MonoBehaviour:
   sprites: []
   graviti: -9.8
   strength: 5
+  canvas: {fileID: 1842048766}
 --- !u!212 &1111023763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2234,8 +2235,8 @@ MonoBehaviour:
   b: {fileID: 7377469703684644861, guid: eafcc0419c985ac4a975ce75bd37176d, type: 3}
   c: {fileID: 7753081213994485583, guid: c46ac6308b3d0964eaf1a288cf26e429, type: 3}
   d: {fileID: 9178755493118431644, guid: 8c7841397bd7b74448952477a3040d49, type: 3}
-  score_1: 3
-  score_2: 3
+  score_1: 10
+  score_2: 10
 --- !u!1 &1162414249
 GameObject:
   m_ObjectHideFlags: 0

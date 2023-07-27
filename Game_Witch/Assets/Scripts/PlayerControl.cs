@@ -14,6 +14,8 @@ public class PlayerControl : MonoBehaviour
     public float graviti = -9.8f;
     public float strength = 5f;
 
+    public GameObject canvas;
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -81,6 +83,7 @@ public class PlayerControl : MonoBehaviour
         else if (collision.gameObject.tag == "LoadMainMenu")
         {
             LevelSkrol.instance.idEndGame();
+            canvas.SetActive(false);
 
         }
         else if (collision.gameObject.tag == "Score_2")
