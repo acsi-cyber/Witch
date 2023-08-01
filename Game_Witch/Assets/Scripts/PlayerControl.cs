@@ -15,16 +15,12 @@ public class PlayerControl : MonoBehaviour
     public float strength = 5f;
 
     public GameObject canvas;
+    public GameObject frog;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-
-    /*private void Start()
-    {
-        InvokeRepeating(nameof(AnimateSprite), 0.15f, 0.15f);
-    }*/
 
     private void OnEnable()
     {
@@ -53,6 +49,16 @@ public class PlayerControl : MonoBehaviour
 
         direction.y += graviti * Time.deltaTime;
         transform.position += direction * Time.deltaTime;
+        
+    }
+
+    void Frog()
+    {
+        if (LifePlayer.shieldscore == 0)
+        {
+            LifePlayer.shieldscore += 1;
+            frog.SetActive(true);
+        }
     }
 
     /*private void AnimateSprite()
@@ -74,11 +80,16 @@ public class PlayerControl : MonoBehaviour
             if (LifePlayer.shieldscore > 0)
             {
                 LifePlayer.shieldscore -= 1;
-
+                frog.SetActive(false);
+                Invoke("Frog", 5.0f);
             }
             else if (LifePlayer.shieldscore < 1)
             {
                 LifePlayer.life -= 1;
+                if (LifePlayer.life == 0)
+                {
+                    CancelInvoke("Frog");
+                }
             }
 
             FindObjectOfType<GameMeneger>().GameOver();
@@ -87,11 +98,6 @@ public class PlayerControl : MonoBehaviour
         {
             FindObjectOfType<GameMeneger>().IncreaseScore();
             
-        }
-        else if (collision.gameObject.tag == "Shield")
-        {
-            LifePlayer.shieldscore = 1;
-
         }
         else if (collision.gameObject.tag == "LoadMainMenu")
         {
@@ -109,11 +115,16 @@ public class PlayerControl : MonoBehaviour
             if (LifePlayer.shieldscore > 0)
             {
                 LifePlayer.shieldscore -= 1;
-
+                frog.SetActive(false);
+                Invoke("Frog", 5.0f);
             }
             else if (LifePlayer.shieldscore < 1)
             {
                 LifePlayer.life -= 1;
+                if (LifePlayer.life == 0)
+                {
+                    CancelInvoke("Frog");
+                }
             }
 
             FindObjectOfType<GameMeneger>().GameOver();
@@ -135,11 +146,16 @@ public class PlayerControl : MonoBehaviour
             if (LifePlayer.shieldscore > 0)
             {
                 LifePlayer.shieldscore -= 1;
-
+                frog.SetActive(false);
+                Invoke("Frog", 5.0f);
             }
             else if (LifePlayer.shieldscore < 1)
             {
                 LifePlayer.life -= 1;
+                if (LifePlayer.life == 0)
+                {
+                    CancelInvoke("Frog");
+                }
             }
 
             direction = Vector3.up * strength;
@@ -151,11 +167,16 @@ public class PlayerControl : MonoBehaviour
             if (LifePlayer.shieldscore > 0)
             {
                 LifePlayer.shieldscore -= 1;
-
+                frog.SetActive(false);
+                Invoke("Frog", 5.0f);
             }
             else if (LifePlayer.shieldscore < 1)
             {
                 LifePlayer.life -= 1;
+                if (LifePlayer.life == 0)
+                {
+                    CancelInvoke("Frog");
+                }
             }
 
             direction = Vector3.down * strength;
@@ -164,3 +185,4 @@ public class PlayerControl : MonoBehaviour
         }
     }
 }
+

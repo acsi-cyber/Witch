@@ -17,6 +17,8 @@ public class GameMeneger : MonoBehaviour
     public GameObject b;
     public GameObject c;
     public GameObject d;
+    public GameObject frog;
+    public GameObject frog2;
 
     public int score_1;
     public int score_2;
@@ -26,7 +28,7 @@ public class GameMeneger : MonoBehaviour
     private void Awake()
     {
         Application.targetFrameRate = 80;
-
+        LifePlayer.shieldscore = 0;
         Pause();
     }
 
@@ -55,6 +57,7 @@ public class GameMeneger : MonoBehaviour
         {
             Destroy(traps[i].gameObject);
         }
+
     }
 
     public void Pause()
@@ -77,6 +80,9 @@ public class GameMeneger : MonoBehaviour
             playButton.SetActive(true);
             exitButton.SetActive(true);
             Pause();
+            frog.SetActive(false);
+            frog2.SetActive(false);
+            LifePlayer.shieldscore = 0;
         }
         Debug.Log(LifePlayer.life);
     }
@@ -147,4 +153,10 @@ public class GameMeneger : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void Spawn()
+    {
+        LifePlayer.shieldscore += 1;
+        frog.SetActive(true);
+        frog2.SetActive(true);
+    }
 }
