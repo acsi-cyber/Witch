@@ -17,6 +17,7 @@ TagManager:
   - TextScore_2
   - LoadMainMenu
   - EndLevel
+  - Shield
   layers:
   - Default
   - TransparentFX

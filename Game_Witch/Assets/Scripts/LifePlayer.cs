@@ -6,13 +6,19 @@ using UnityEngine.UI;
 public class LifePlayer : MonoBehaviour
 {
     public static int life = 3;
+    public static int shieldscore = 0;
     public int numOfHeart;
+    public int numOfShield;
     public Image[] hearts;
+    public Image[] shield;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    public Sprite fullShield;
+    public Sprite emptyShield;
 
     void Update()
     {
+        //XP
         if (life > numOfHeart)
         {
             life = numOfHeart;
@@ -35,6 +41,31 @@ public class LifePlayer : MonoBehaviour
             else
             {
                 hearts[i].enabled = false;
+            }
+        }
+        // Shield
+        if (shieldscore > numOfShield)
+        {
+            shieldscore = numOfShield;
+        }
+
+        for (int i = 0; i < shield.Length; i++)
+        {
+            if (i < Mathf.RoundToInt(shieldscore))
+            {
+                shield[i].sprite = fullShield;
+            }
+            else
+            {
+                shield[i].sprite = emptyShield;
+            }
+            if (i < numOfShield)
+            {
+                shield[i].enabled = true;
+            }
+            else
+            {
+                shield[i].enabled = false;
             }
         }
     }

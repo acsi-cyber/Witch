@@ -71,7 +71,15 @@ public class PlayerControl : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstacle")
         {
-            LifePlayer.life -= 1;
+            if (LifePlayer.shieldscore > 0)
+            {
+                LifePlayer.shieldscore -= 1;
+
+            }
+            else if (LifePlayer.shieldscore < 1)
+            {
+                LifePlayer.life -= 1;
+            }
 
             FindObjectOfType<GameMeneger>().GameOver();
         }
@@ -79,6 +87,11 @@ public class PlayerControl : MonoBehaviour
         {
             FindObjectOfType<GameMeneger>().IncreaseScore();
             
+        }
+        else if (collision.gameObject.tag == "Shield")
+        {
+            LifePlayer.shieldscore = 1;
+
         }
         else if (collision.gameObject.tag == "LoadMainMenu")
         {
@@ -93,7 +106,15 @@ public class PlayerControl : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Poison")
         {
-            LifePlayer.life -= 1;
+            if (LifePlayer.shieldscore > 0)
+            {
+                LifePlayer.shieldscore -= 1;
+
+            }
+            else if (LifePlayer.shieldscore < 1)
+            {
+                LifePlayer.life -= 1;
+            }
 
             FindObjectOfType<GameMeneger>().GameOver();
         }
@@ -111,7 +132,15 @@ public class PlayerControl : MonoBehaviour
         }
         else if (collision.gameObject.tag == "cloud")
         {
-            LifePlayer.life -= 1;
+            if (LifePlayer.shieldscore > 0)
+            {
+                LifePlayer.shieldscore -= 1;
+
+            }
+            else if (LifePlayer.shieldscore < 1)
+            {
+                LifePlayer.life -= 1;
+            }
 
             direction = Vector3.up * strength;
 
@@ -119,7 +148,15 @@ public class PlayerControl : MonoBehaviour
         }
         else if (collision.gameObject.tag == "cloudDown")
         {
-            LifePlayer.life -= 1;
+            if (LifePlayer.shieldscore > 0)
+            {
+                LifePlayer.shieldscore -= 1;
+
+            }
+            else if (LifePlayer.shieldscore < 1)
+            {
+                LifePlayer.life -= 1;
+            }
 
             direction = Vector3.down * strength;
 
