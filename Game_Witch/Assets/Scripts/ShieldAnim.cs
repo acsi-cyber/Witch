@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoomAnimator : MonoBehaviour
+public class ShieldAnim : MonoBehaviour
 {
     private int spriteIndex;
     public Sprite[] sprites;
     private SpriteRenderer spriteRenderer;
-    public GameObject Object;
 
     private void Awake()
     {
@@ -26,8 +25,6 @@ public class BoomAnimator : MonoBehaviour
         if (spriteIndex >= sprites.Length)
         {
             spriteIndex = 0;
-            CancelInvoke();
-            Object.SetActive(false);
         }
 
         spriteRenderer.sprite = sprites[spriteIndex];

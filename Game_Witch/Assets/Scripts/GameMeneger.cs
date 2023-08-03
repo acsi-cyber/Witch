@@ -19,6 +19,7 @@ public class GameMeneger : MonoBehaviour
     public GameObject d;
     public GameObject frog;
     public GameObject frog2;
+    public GameObject frog3;
 
     public int score_1;
     public int score_2;
@@ -158,5 +159,6 @@ public class GameMeneger : MonoBehaviour
         LifePlayer.shieldscore += 1;
         frog.SetActive(true);
         frog2.SetActive(true);
+        frog3.SetActive(true);
     }
 }

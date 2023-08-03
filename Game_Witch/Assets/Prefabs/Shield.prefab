@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 882987677660931887}
   - component: {fileID: 882987677660931884}
-  - component: {fileID: 882987677660931885}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -85,24 +84,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &882987677660931885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 882987677660931882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ea9db0a01b5566438baa31aed2e3229, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: f6277559c68915b44b8f9a9ff613e40f, type: 3}
-  - {fileID: 21300000, guid: f135a8c22f7438a4fa3b2d0f5f505254, type: 3}
-  - {fileID: 21300000, guid: 251a7763da5bb2a4da4fdc9477b3d0e9, type: 3}
-  - {fileID: 21300000, guid: eddee7dd7762d6d41b43ab7b14d03618, type: 3}
-  - {fileID: 21300000, guid: c1173c4848c7fca47929aeb826d19522, type: 3}
-  - {fileID: 21300000, guid: 38b0a97b97b03644abdeb1df03526af4, type: 3}
-  - {fileID: 21300000, guid: 3bf8cc3c4145a6e46ab5a741c9f2f29e, type: 3}
-  - {fileID: 21300000, guid: a473273a21813da47b867c26ea9740be, type: 3}

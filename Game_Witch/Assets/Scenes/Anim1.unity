@@ -520,9 +520,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 954424594}
     m_Modifications:
+    - target: {fileID: -8163603876734376039, guid: 2f9c3c26f0b9c6541a60eef3e67ee1a7, type: 3}
+      propertyPath: Object
+      value: 
+      objectReference: {fileID: 1630706223}
     - target: {fileID: 4327788767950386494, guid: 2f9c3c26f0b9c6541a60eef3e67ee1a7, type: 3}
       propertyPath: m_Name
       value: 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327788767950386494, guid: 2f9c3c26f0b9c6541a60eef3e67ee1a7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5453546617142125361, guid: 2f9c3c26f0b9c6541a60eef3e67ee1a7, type: 3}
       propertyPath: m_RootOrder
@@ -589,6 +597,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015454289}
     m_Modifications:
+    - target: {fileID: -8163603876734376039, guid: 2f9c3c26f0b9c6541a60eef3e67ee1a7, type: 3}
+      propertyPath: Object
+      value: 
+      objectReference: {fileID: 1590028513}
     - target: {fileID: 4327788767950386494, guid: 2f9c3c26f0b9c6541a60eef3e67ee1a7, type: 3}
       propertyPath: m_Name
       value: 1 (1)
@@ -1156,7 +1168,7 @@ PlayableDirector:
   - key: {fileID: -5024770041867469254, guid: c1dd3e9169f9f0a4f9cf12a177960ed9, type: 2}
     value: {fileID: 753267436}
   - key: {fileID: -8696064950255146184, guid: c1dd3e9169f9f0a4f9cf12a177960ed9, type: 2}
-    value: {fileID: 1630706223}
+    value: {fileID: 0}
   - key: {fileID: 6008512536788207394, guid: d2de7022954577945bac546aff5c06a4, type: 2}
     value: {fileID: 1630706223}
   - key: {fileID: -7757458146616097331, guid: d2de7022954577945bac546aff5c06a4, type: 2}
@@ -2267,6 +2279,7 @@ MonoBehaviour:
   graviti: -9.8
   strength: 5
   canvas: {fileID: 0}
+  frog: {fileID: 0}
 --- !u!212 &1111023763
 SpriteRenderer:
   m_ObjectHideFlags: 0

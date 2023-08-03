@@ -41,7 +41,6 @@ public class EndLevel : MonoBehaviour
         else if (i > 1f & SceneManager.GetActiveScene().buildIndex == 1)
         {
             levelComplete = PlayerPrefs.GetInt("LevelComplete");
-            Debug.Log(levelComplete);
             if (levelComplete == 5)
             {
                 scene1.SetActive(false);
@@ -62,12 +61,14 @@ public class EndLevel : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
+            Time.timeScale = 1f;
             SceneManager.LoadScene("MainMenu");
             LifePlayer.life = 3;
         }
 
         else if (SceneManager.GetActiveScene().buildIndex != 1)
         {
+            Time.timeScale = 1f;
             SceneManager.LoadScene("Anim1");
         }
     }

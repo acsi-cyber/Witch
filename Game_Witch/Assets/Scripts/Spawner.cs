@@ -7,13 +7,15 @@ public class Spawner : MonoBehaviour
     public GameObject prefab;
     [SerializeField] GameObject Object;
 
-    public float spawnRate = 1f;
-    public float minHeight = -1f;
-    public float maxHeight = 1f;
+    public float minSpawnRate = 0f;
+    public float maxSpawnRate = 2f;
+    public float minHeight = 0f;
+    public float maxHeight = 0f;
+    GameObject pipes;
 
     private void OnEnable()
     {
-        InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
+        InvokeRepeating(nameof(Spawn), Random.Range(minSpawnRate, maxSpawnRate), Random.Range(minSpawnRate, maxSpawnRate));
     }
 
     private void OnDisable()
@@ -21,9 +23,9 @@ public class Spawner : MonoBehaviour
         CancelInvoke(nameof(Spawn));
     }
 
-    private void Spawn()
+    public void Spawn()
     {
-        GameObject pipes = Instantiate(prefab, transform.position, Quaternion.identity, Object.transform);
+        pipes = Instantiate(prefab, transform.position, Quaternion.identity, Object.transform);
         pipes.transform.position += Vector3.up * Random.Range(minHeight, maxHeight);
     }
 }

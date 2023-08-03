@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -1188680077806965605}
   - component: {fileID: 3454047471636186905}
   - component: {fileID: 9068724539408195994}
+  - component: {fileID: -3027282655118991257}
   m_Layer: 0
   m_Name: spr_4
   m_TagString: Obstacle
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5606742632990973157}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.017, y: -0.352, z: -0.09}
-  m_LocalScale: {x: 0.24, y: 0.2706417, z: 3.5523396}
+  m_LocalScale: {x: 0.17, y: 0.19170456, z: 2.5162406}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -166,3 +167,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.3884025, y: 4.853578}
   m_EdgeRadius: 0
+--- !u!50 &-3027282655118991257
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5606742632990973157}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

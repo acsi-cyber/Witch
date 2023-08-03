@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoomAnimator : MonoBehaviour
+public class BoomAnimator2 : MonoBehaviour
 {
     private int spriteIndex;
     public Sprite[] sprites;
@@ -16,7 +16,7 @@ public class BoomAnimator : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating(nameof(AnimateSprite), 0.1f, 0.1f);
+        InvokeRepeating(nameof(AnimateSprite), 0.11f, 0.11f);
     }
 
     private void AnimateSprite()
@@ -26,8 +26,6 @@ public class BoomAnimator : MonoBehaviour
         if (spriteIndex >= sprites.Length)
         {
             spriteIndex = 0;
-            CancelInvoke();
-            Object.SetActive(false);
         }
 
         spriteRenderer.sprite = sprites[spriteIndex];

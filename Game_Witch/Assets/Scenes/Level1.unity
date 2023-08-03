@@ -218,7 +218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 7377469703684644861, guid: eafcc0419c985ac4a975ce75bd37176d, type: 3}
   Object: {fileID: 854020942}
-  spawnRate: 3
+  minSpawnRate: 3
+  maxSpawnRate: 5
   minHeight: 0
   maxHeight: 0
 --- !u!4 &141427526
@@ -1474,7 +1475,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1474552325857961675, guid: cf2db69f6419a3e4ba0272613557547b, type: 3}
   Object: {fileID: 854020942}
-  spawnRate: 12
+  minSpawnRate: 10
+  maxSpawnRate: 12
   minHeight: -4
   maxHeight: 3
 --- !u!1 &741784843
@@ -1868,7 +1870,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 5606742632990973157, guid: ab51f2074e74ef246baaa73349b09a49, type: 3}
   Object: {fileID: 854020942}
-  spawnRate: 4
+  minSpawnRate: 4
+  maxSpawnRate: 6
   minHeight: 0
   maxHeight: 0
 --- !u!4 &899122705
@@ -1879,7 +1882,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899122703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4, z: -1.01}
+  m_LocalPosition: {x: 0, y: 0.89, z: -1.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2186,9 +2189,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 7501513101878943223, guid: 24438b8ad3aedfc4eb35790651233218, type: 3}
   Object: {fileID: 854020942}
-  spawnRate: 15
+  minSpawnRate: 8
+  maxSpawnRate: 10
   minHeight: -4
   maxHeight: 3
+--- !u!1 &1083557031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4327788767950386494, guid: 2f9c3c26f0b9c6541a60eef3e67ee1a7, type: 3}
+  m_PrefabInstance: {fileID: 1198509067}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1111023758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2460,6 +2469,7 @@ MonoBehaviour:
   d: {fileID: 9178755493118431644, guid: 8c7841397bd7b74448952477a3040d49, type: 3}
   frog: {fileID: 1408659464}
   frog2: {fileID: 754031528}
+  frog3: {fileID: 1083557031}
   score_1: 10
   score_2: 10
 --- !u!1 &1162414249
@@ -2773,7 +2783,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 9178755493118431644, guid: 8c7841397bd7b74448952477a3040d49, type: 3}
   Object: {fileID: 854020942}
-  spawnRate: 4
+  minSpawnRate: 3
+  maxSpawnRate: 5
   minHeight: -3
   maxHeight: 3
 --- !u!1001 &1198509067
@@ -2783,6 +2794,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1111023764}
     m_Modifications:
+    - target: {fileID: -8163603876734376039, guid: 2f9c3c26f0b9c6541a60eef3e67ee1a7, type: 3}
+      propertyPath: Object
+      value: 
+      objectReference: {fileID: 1083557031}
     - target: {fileID: 4327788767950386494, guid: 2f9c3c26f0b9c6541a60eef3e67ee1a7, type: 3}
       propertyPath: m_Name
       value: 1 (1)
@@ -3407,7 +3422,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 7753081213994485583, guid: c46ac6308b3d0964eaf1a288cf26e429, type: 3}
   Object: {fileID: 854020942}
-  spawnRate: 8
+  minSpawnRate: 6
+  maxSpawnRate: 8
   minHeight: 2
   maxHeight: 2
 --- !u!4 &1430588232
@@ -3941,6 +3957,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 882987677660931882, guid: 0119d8bb88da04e498a4b06d5a7b3eeb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 882987677660931887, guid: 0119d8bb88da04e498a4b06d5a7b3eeb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4008,6 +4028,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 882987677660931887, guid: 0119d8bb88da04e498a4b06d5a7b3eeb, type: 3}
   m_PrefabInstance: {fileID: 2004074760}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2004074764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408659464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1319902022a970d41979064b1bc5d6da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: f6277559c68915b44b8f9a9ff613e40f, type: 3}
+  - {fileID: 21300000, guid: f135a8c22f7438a4fa3b2d0f5f505254, type: 3}
+  - {fileID: 21300000, guid: 251a7763da5bb2a4da4fdc9477b3d0e9, type: 3}
+  - {fileID: 21300000, guid: eddee7dd7762d6d41b43ab7b14d03618, type: 3}
+  - {fileID: 21300000, guid: c1173c4848c7fca47929aeb826d19522, type: 3}
+  - {fileID: 21300000, guid: 38b0a97b97b03644abdeb1df03526af4, type: 3}
+  - {fileID: 21300000, guid: 3bf8cc3c4145a6e46ab5a741c9f2f29e, type: 3}
+  - {fileID: 21300000, guid: a473273a21813da47b867c26ea9740be, type: 3}
 --- !u!1 &2073566546
 GameObject:
   m_ObjectHideFlags: 0
