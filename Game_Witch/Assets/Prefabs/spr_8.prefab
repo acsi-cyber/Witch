@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -9123947358068031554}
   - component: {fileID: -5118795378650090473}
   - component: {fileID: -2002425120269005615}
+  - component: {fileID: 8913414393619313477}
   m_Layer: 0
   m_Name: spr_8
   m_TagString: Score
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7377469703684644861}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.2112, y: -0.416, z: -0.98}
-  m_LocalScale: {x: 0.3, y: 0.3296703, z: 0.15000002}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.15000002}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -161,3 +162,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8913414393619313477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7377469703684644861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19ec85d4ff98ca44f936d30f4b7a6310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minScale: {x: 0.35, y: 0.35, z: 0.3}
+  maxScale: {x: 0.27, y: 0.27, z: 0.3}
+  repeatFlag: 1
+  scalingSpeed: 2
+  scalingDuration: 1

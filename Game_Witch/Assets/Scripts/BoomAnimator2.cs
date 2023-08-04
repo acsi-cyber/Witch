@@ -8,15 +8,17 @@ public class BoomAnimator2 : MonoBehaviour
     public Sprite[] sprites;
     private SpriteRenderer spriteRenderer;
     public GameObject Object;
+    int i = 0;
 
-    private void Awake()
+    private void Update()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
-
-    private void Start()
-    {
-        InvokeRepeating(nameof(AnimateSprite), 0.11f, 0.11f);
+        if (Object.activeSelf == true & i == 0)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            InvokeRepeating(nameof(AnimateSprite), 0.1f, 0.1f);
+            i++;
+        }
+        
     }
 
     private void AnimateSprite()
@@ -25,7 +27,9 @@ public class BoomAnimator2 : MonoBehaviour
 
         if (spriteIndex >= sprites.Length)
         {
-            spriteIndex = 0;
+            CancelInvoke();
+            Object.SetActive(false);
+            return;
         }
 
         spriteRenderer.sprite = sprites[spriteIndex];

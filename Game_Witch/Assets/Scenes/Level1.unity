@@ -230,7 +230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141427524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.01}
+  m_LocalPosition: {x: 1.79, y: 0, z: -1.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -341,8 +341,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149529591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3196, y: -5.57, z: 0}
-  m_LocalScale: {x: 22.19897, y: 1, z: 1}
+  m_LocalPosition: {x: 1.3196, y: -6.149, z: 0}
+  m_LocalScale: {x: 22.19897, y: 2.158, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1239,8 +1239,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571055967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.299, y: 5.56, z: 0}
-  m_LocalScale: {x: 22.158665, y: 1, z: 1}
+  m_LocalPosition: {x: 1.299, y: 6.1811, z: 0}
+  m_LocalScale: {x: 22.158665, y: 2.2423174, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1832,7 +1832,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854020942}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.416, y: -0.477, z: -1.81}
+  m_LocalPosition: {x: 0.5221, y: -0.477, z: -1.81}
   m_LocalScale: {x: 0.042225696, y: 0.07618689, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1882,7 +1882,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899122703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.89, z: -1.01}
+  m_LocalPosition: {x: 0.89, y: 0.89, z: -1.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2467,6 +2467,8 @@ MonoBehaviour:
   b: {fileID: 7377469703684644861, guid: eafcc0419c985ac4a975ce75bd37176d, type: 3}
   c: {fileID: 7753081213994485583, guid: c46ac6308b3d0964eaf1a288cf26e429, type: 3}
   d: {fileID: 9178755493118431644, guid: 8c7841397bd7b74448952477a3040d49, type: 3}
+  e: {fileID: 7501513101878943223, guid: 24438b8ad3aedfc4eb35790651233218, type: 3}
+  f: {fileID: 1474552325857961675, guid: cf2db69f6419a3e4ba0272613557547b, type: 3}
   frog: {fileID: 1408659464}
   frog2: {fileID: 754031528}
   frog3: {fileID: 1083557031}

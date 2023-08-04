@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2016791455416719371}
   - component: {fileID: 2297213598534452207}
   - component: {fileID: 3670639048842937553}
+  - component: {fileID: 8101315445671249243}
   m_Layer: 0
   m_Name: spr_7 1
   m_TagString: Score_2
@@ -139,3 +140,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyPrefab: {fileID: 9178755493118431644}
+--- !u!114 &8101315445671249243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178755493118431644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19ec85d4ff98ca44f936d30f4b7a6310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minScale: {x: 0.18, y: 0.18, z: 0.15}
+  maxScale: {x: 0.15, y: 0.15, z: 0.15}
+  repeatFlag: 1
+  scalingSpeed: 2
+  scalingDuration: 1

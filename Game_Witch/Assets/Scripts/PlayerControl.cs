@@ -164,24 +164,20 @@ public class PlayerControl : MonoBehaviour
         }
         else if (collision.gameObject.tag == "cloudDown")
         {
-            if (LifePlayer.shieldscore > 0)
-            {
-                LifePlayer.shieldscore -= 1;
-                frog.SetActive(false);
-                Invoke("Frog", 5.0f);
-            }
-            else if (LifePlayer.shieldscore < 1)
-            {
-                LifePlayer.life -= 1;
-                if (LifePlayer.life == 0)
-                {
-                    CancelInvoke("Frog");
-                }
-            }
-
             direction = Vector3.down * strength;
+        }
+    }
 
-            FindObjectOfType<GameMeneger>().GameOver();
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "cloudDown")
+        {
+            direction = Vector3.down * strength;
+        }
+
+        else if (collision.gameObject.tag == "cloud")
+        {
+            direction = Vector3.up * strength;
         }
     }
 }

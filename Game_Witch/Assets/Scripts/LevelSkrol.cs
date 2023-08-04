@@ -9,6 +9,7 @@ public class LevelSkrol : MonoBehaviour
     public static LevelSkrol instance = null;
     int sceneIndex;
     int levelComplete;
+    int levelReal;
 
     void Start()
     {
@@ -19,10 +20,12 @@ public class LevelSkrol : MonoBehaviour
 
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
         levelComplete = PlayerPrefs.GetInt("LevelComplete");
+        levelReal = SceneManager.GetActiveScene().buildIndex;
     }
 
     public void idEndGame()
     {
+        PlayerPrefs.SetInt("LevelReal", levelReal);
         if (levelComplete < sceneIndex)
             PlayerPrefs.SetInt("LevelComplete", sceneIndex);
         //SceneManager.LoadScene(sceneIndex + 1);//

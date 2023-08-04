@@ -12,6 +12,7 @@ public class EndLevel : MonoBehaviour
     public float i;
     public bool update = false;
     int levelComplete;
+    int levelReal;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -41,10 +42,20 @@ public class EndLevel : MonoBehaviour
         else if (i > 1f & SceneManager.GetActiveScene().buildIndex == 1)
         {
             levelComplete = PlayerPrefs.GetInt("LevelComplete");
+            levelReal = PlayerPrefs.GetInt("LevelReal");
             if (levelComplete == 5)
             {
-                scene1.SetActive(false);
-                scene2.SetActive(true);
+                if (levelReal != 5)
+                {
+                    scene1.SetActive(true);
+                    scene2.SetActive(false);
+                }
+                else if (levelReal == 5)
+                {
+                    scene1.SetActive(false);
+                    scene2.SetActive(true);
+                }
+                
             }
             else if (levelComplete != 5)
             {

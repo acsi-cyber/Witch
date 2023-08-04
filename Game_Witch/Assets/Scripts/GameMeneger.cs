@@ -17,6 +17,8 @@ public class GameMeneger : MonoBehaviour
     public GameObject b;
     public GameObject c;
     public GameObject d;
+    public GameObject e;
+    public GameObject f;
     public GameObject frog;
     public GameObject frog2;
     public GameObject frog3;
@@ -45,6 +47,8 @@ public class GameMeneger : MonoBehaviour
         b.SetActive(true);
         c.SetActive(true);
         d.SetActive(true);
+        e.SetActive(true);
+        f.SetActive(true);
 
         score1Storage = score_1;
         score2Storage = score_2;
@@ -128,6 +132,8 @@ public class GameMeneger : MonoBehaviour
             b.SetActive(false);
             c.SetActive(false);
             d.SetActive(false);
+            e.SetActive(false);
+            f.SetActive(false);
         }
     }
 
@@ -146,6 +152,8 @@ public class GameMeneger : MonoBehaviour
             b.SetActive(false);
             c.SetActive(false);
             d.SetActive(false);
+            e.SetActive(false);
+            f.SetActive(false);
         }
     }
 
