@@ -35,7 +35,12 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             direction = Vector3.up * strength;
-        }    
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            FindObjectOfType<GameMeneger>().PauseEsc();
+        }
 
         if (Input.touchCount > 0)
         {

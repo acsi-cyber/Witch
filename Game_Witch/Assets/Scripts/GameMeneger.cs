@@ -10,8 +10,9 @@ public class GameMeneger : MonoBehaviour
     public Text scoreText_1;
     public Text scoreText_2;
     public GameObject playButton;
+    public GameObject playStartButton;
+    public GameObject playPauseButton;
     public GameObject exitButton;
-    public GameObject gameOver;
     public GameObject timeLine;
     public GameObject a;
     public GameObject b;
@@ -22,11 +23,14 @@ public class GameMeneger : MonoBehaviour
     public GameObject frog;
     public GameObject frog2;
     public GameObject frog3;
+    public GameObject timeEffectUp;
+    public GameObject timeEffectDown;
 
     public int score_1;
     public int score_2;
     private int score1Storage;
     private int score2Storage;
+    int i = 0;
 
     private void Awake()
     {
@@ -42,7 +46,6 @@ public class GameMeneger : MonoBehaviour
 
         playButton.SetActive(false);
         exitButton.SetActive(false);
-        gameOver.SetActive(false);
         a.SetActive(true);
         b.SetActive(true);
         c.SetActive(true);
@@ -69,11 +72,32 @@ public class GameMeneger : MonoBehaviour
     {
         Time.timeScale = 0f;
         player.enabled = false;
-        if (score_1 < 3 || score_2 < 3)
+    }
+
+    public void PauseEsc()
+    {
+        if (i == 0)
         {
-            score_1 = score1Storage;
-            score_2 = score2Storage;
+            playStartButton.SetActive(false);
+            playButton.SetActive(true);
+            exitButton.SetActive(true);
+            playPauseButton.SetActive(true);
+            Time.timeScale = 0f;
+            player.enabled = false;
+            i++;
         }
+
+        else if (i == 1)
+        {
+            playStartButton.SetActive(true);
+            playButton.SetActive(false);
+            exitButton.SetActive(false);
+            playPauseButton.SetActive(false);
+            Time.timeScale = 1f;
+            player.enabled = true;
+            i--;
+        }
+
     }
 
     public void GameOver()
@@ -81,7 +105,6 @@ public class GameMeneger : MonoBehaviour
         if (LifePlayer.life == 0)
         {
             LifePlayer.life = 3;
-            gameOver.SetActive(true);
             playButton.SetActive(true);
             exitButton.SetActive(true);
             Pause();
@@ -102,19 +125,32 @@ public class GameMeneger : MonoBehaviour
 
     public void SpeedUp()
     {
-        Time.timeScale = 2f;
-        Invoke("SpeedNormal", 8);
+        if (Time.timeScale == 1f)
+        {
+            Time.timeScale = 2f;
+            Invoke("SpeedNormal", TimeEffect.timeSpeedUp);
+            timeEffectUp.SetActive(true);
+            StartCoroutine(FindObjectOfType<TimeEffect>().TimeChek());
+        }
     }
 
     public void SpeedDown()
     {
-        Time.timeScale = 0.5f;
-        Invoke("SpeedNormal", 2);
+        if (Time.timeScale == 1f)
+        {
+            Time.timeScale = 0.5f;
+            Invoke("SpeedNormal", TimeEffect.timeSpeedDown);
+            timeEffectDown.SetActive(true);
+            StartCoroutine(FindObjectOfType<TimeEffect>().TimeChek());
+        }
+        
     }
 
     void SpeedNormal()
     {
         Time.timeScale = 1f;
+        timeEffectUp.SetActive(false);
+        timeEffectDown.SetActive(false);
     }
 
     public void IncreaseScore()
