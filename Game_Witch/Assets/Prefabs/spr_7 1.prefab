@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2016791455416719371}
   - component: {fileID: 2297213598534452207}
   - component: {fileID: 3670639048842937553}
+  - component: {fileID: 1310624068501029577}
   - component: {fileID: 8101315445671249243}
   m_Layer: 0
   m_Name: spr_7 1
@@ -140,6 +141,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyPrefab: {fileID: 9178755493118431644}
+--- !u!114 &1310624068501029577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178755493118431644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5de22789b3bec1143aa6d80199c40a1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 46246aa4f1d6c9c418aa0d38a7aa285f, type: 3}
+  - {fileID: 21300000, guid: 5f7ddda16e323774d831af729acc5885, type: 3}
+  - {fileID: 21300000, guid: aaad59e11b43c704fac1cd1924e63e3d, type: 3}
+  - {fileID: 21300000, guid: c271d3630ffde714fb3e0158701989a8, type: 3}
+  - {fileID: 21300000, guid: d520ae2e512c559479789c567260162f, type: 3}
+  - {fileID: 21300000, guid: dd30a33e907ae7b41945120f7bbf0913, type: 3}
+  - {fileID: 21300000, guid: 3a9a58f08ab545b4281d597e3ef79c04, type: 3}
+  - {fileID: 21300000, guid: 28578bc98db297b4c8bd63e4dbe841b9, type: 3}
+  - {fileID: 21300000, guid: ab4c97a84d8e56b44a1801d5096a7ebf, type: 3}
+  - {fileID: 21300000, guid: 6f29ddece7bd7fb4689cdeb233816aa4, type: 3}
+  - {fileID: 21300000, guid: bd49d46058960bd4fbbadb58ca74f1a9, type: 3}
+  img: {fileID: 9178755493118431644}
 --- !u!114 &8101315445671249243
 MonoBehaviour:
   m_ObjectHideFlags: 0

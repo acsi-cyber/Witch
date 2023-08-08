@@ -6,11 +6,15 @@ public class Destroe : MonoBehaviour
 {
     public GameObject destroyPrefab;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
+            if (destroyPrefab.tag != "Score" & destroyPrefab.tag != "Score_2")
+            {
+                Destroy(gameObject);
+            }
+            
         }
 
         else if (collision.gameObject.tag == "LoadMainMenu")

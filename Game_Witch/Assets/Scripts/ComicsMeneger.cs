@@ -74,6 +74,7 @@ public class ComicsMeneger : MonoBehaviour
             case 7:
                 img6.SetActive(true);
                 StartCoroutine(FindObjectOfType<ComicsAnim1>().CorutinStart());
+                Invoke("LoadScene1", 6);
                 break;
         }
     }
@@ -82,5 +83,11 @@ public class ComicsMeneger : MonoBehaviour
     {
         DisableButton.proverca = 0;
         SceneManager.LoadScene(2);
+    }
+
+    void LoadScene1()
+    {
+        DisableButton.proverca = 0;
+        SceneManager.LoadScene(0);
     }
 }
