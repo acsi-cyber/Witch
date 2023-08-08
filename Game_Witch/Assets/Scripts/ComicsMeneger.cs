@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ComicsMeneger : MonoBehaviour
 {
+    public GameObject fon1;
+    public GameObject fon2;
     public GameObject img1;
     public GameObject img2;
     public GameObject img3;
@@ -14,36 +17,70 @@ public class ComicsMeneger : MonoBehaviour
 
     private void Start()
     {
+        fon1.SetActive(false);
+        fon2.SetActive(false);
         img1.SetActive(false);
         img2.SetActive(false);
         img3.SetActive(false);
         img4.SetActive(false);
         img5.SetActive(false);
         img6.SetActive(false);
+        if (DisableButton.proverca == 1)
+        {
+            fon1.SetActive(true);
+            FindObjectOfType<ComicsMeneger>().SwitchStart();
+        }
+        else if (DisableButton.proverca == 2)
+        {
+            Invoke("Comics2", 5.1f);
+        }
+        
     }
 
-    private void Update()
+    public void Comics2()
+    {
+        fon2.SetActive(true);
+        sceil = 6;
+        DisableButton.proverca = 0;
+        FindObjectOfType<ComicsMeneger>().SwitchStart();
+    }
+
+    public void SwitchStart()
     {
         switch (sceil)
         {
             case 1:
                 img1.SetActive(true);
+                StartCoroutine(FindObjectOfType<ComicsAnim>().CorutinStart());
                 break;
             case 2:
                 img2.SetActive(true);
+                StartCoroutine(FindObjectOfType<ComicsAnim>().CorutinStart());
                 break;
             case 3:
                 img3.SetActive(true);
+                StartCoroutine(FindObjectOfType<ComicsAnim>().CorutinStart());
                 break;
             case 4:
                 img4.SetActive(true);
-                break;
-            case 5:
-                img5.SetActive(true);
+                StartCoroutine(FindObjectOfType<ComicsAnim>().CorutinStart());
+                Invoke("LoadScene", 5);
                 break;
             case 6:
+                Debug.Log("6");
+                img5.SetActive(true);
+                StartCoroutine(FindObjectOfType<ComicsAnim>().CorutinStart());
+                break;
+            case 7:
                 img6.SetActive(true);
+                StartCoroutine(FindObjectOfType<ComicsAnim1>().CorutinStart());
                 break;
         }
+    }
+
+    void LoadScene()
+    {
+        DisableButton.proverca = 0;
+        SceneManager.LoadScene(2);
     }
 }

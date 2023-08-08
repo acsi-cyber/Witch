@@ -9,6 +9,7 @@ public class EndLevel : MonoBehaviour
     public GameObject size2;
     public GameObject scene1;
     public GameObject scene2;
+    public GameObject player;
     public float i;
     public bool update = false;
     int levelComplete;
@@ -32,6 +33,14 @@ public class EndLevel : MonoBehaviour
 
     public void Update()
     {
+        if (DisableButton.proverca == 0)
+        {
+            player.SetActive(true);
+        }
+        else if (DisableButton.proverca == 2)
+        {
+            player.SetActive(true);
+        }
         if (!update) return;
         if (i < 12f & SceneManager.GetActiveScene().buildIndex != 1)
         {
@@ -73,7 +82,17 @@ public class EndLevel : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             Time.timeScale = 1f;
-            SceneManager.LoadScene("MainMenu");
+            if (DisableButton.proverca == 0)
+            {
+                player.SetActive(false);
+                SceneManager.LoadScene("MainMenu");
+            }
+            else if (DisableButton.proverca == 2)
+            {
+                player.SetActive(false);
+                scene1.SetActive(false);
+                scene2.SetActive(false);
+            }
             LifePlayer.life = 3;
         }
 

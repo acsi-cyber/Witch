@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ComicsAnim : MonoBehaviour
+public class ComicsAnim1 : MonoBehaviour
 {
     public Vector3 minScale;
     public Vector3 maxScale;

@@ -102,7 +102,7 @@ public class PlayerControl : MonoBehaviour
         else if (collision.gameObject.tag == "Score")
         {
             FindObjectOfType<GameMeneger>().IncreaseScore();
-            
+            gameObject.AddComponent<BoomAnimator1>();
         }
         else if (collision.gameObject.tag == "LoadMainMenu")
         {

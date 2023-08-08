@@ -17,6 +17,7 @@ public class DisableButton : MonoBehaviour
     public GameObject panel2;
     int i = 0;
     int levelComplete;
+    public static int proverca = 0;
 
     void Start()
     {
@@ -79,6 +80,14 @@ public class DisableButton : MonoBehaviour
 
     public void LoadTo(int level)
     {
+        if (level == 1)
+        {
+            proverca = 1;
+        }
+        else if (level == 5)
+        {
+            proverca = 2;
+        }
         SceneManager.LoadScene(level);
     }
 
