@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerFixet : MonoBehaviour
+public class SpawnFixet : MonoBehaviour
 {
     private float leftEdge;
     private float playerZ;
@@ -16,7 +16,7 @@ public class PlayerFixet : MonoBehaviour
 
     void Update()
     {
-        leftEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).x + 2f;
+        leftEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).x * -1f + 2f;
         if (transform.position.x < leftEdge)
         {
             transform.position = new Vector3(leftEdge, playerY, playerZ);

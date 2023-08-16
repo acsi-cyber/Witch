@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject prefab;
-    [SerializeField] GameObject Object;
+    public GameObject Object;
 
     public float minSpawnRate = 0f;
     public float maxSpawnRate = 2f;
