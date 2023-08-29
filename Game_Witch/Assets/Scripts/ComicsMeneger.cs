@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -47,24 +48,27 @@ public class ComicsMeneger : MonoBehaviour
 
     public void SwitchStart()
     {
+        Debug.Log("1");
         switch (sceil)
         {
             case 1:
+                Debug.Log("2");
                 img1.SetActive(true);
                 StartCoroutine(FindObjectOfType<ComicsAnim>().CorutinStart());
                 break;
             case 2:
                 img2.SetActive(true);
-                StartCoroutine(FindObjectOfType<ComicsAnim>().CorutinStart());
+                StartCoroutine(FindObjectOfType<ComicsAnim1>().CorutinStart());
                 break;
             case 3:
                 img3.SetActive(true);
-                StartCoroutine(FindObjectOfType<ComicsAnim>().CorutinStart());
+                StartCoroutine(FindObjectOfType<ComicsAnim2>().CorutinStart());
                 break;
             case 4:
                 img4.SetActive(true);
-                StartCoroutine(FindObjectOfType<ComicsAnim>().CorutinStart());
+                StartCoroutine(FindObjectOfType<ComicsAnim3>().CorutinStart());
                 Invoke("LoadScene", 5);
+                sceil = 0;
                 break;
             case 6:
                 Debug.Log("6");
@@ -73,7 +77,7 @@ public class ComicsMeneger : MonoBehaviour
                 break;
             case 7:
                 img6.SetActive(true);
-                StartCoroutine(FindObjectOfType<ComicsAnim1>().CorutinStart());
+                StartCoroutine(FindObjectOfType<ComicsAnim>().CorutinStart());
                 Invoke("LoadScene1", 6);
                 break;
         }
@@ -81,6 +85,7 @@ public class ComicsMeneger : MonoBehaviour
 
     void LoadScene()
     {
+        sceil = 0;
         DisableButton.proverca = 0;
         SceneManager.LoadScene(2);
     }

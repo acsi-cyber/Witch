@@ -28,7 +28,7 @@ public class ComicsAnim : MonoBehaviour
         yield return RepeatLerping(minScale, maxScale, scalingDuration);
     }
 
-    IEnumerator RepeatLerping(Vector3 startScale, Vector3 endScale, float time)
+    public IEnumerator RepeatLerping(Vector3 startScale, Vector3 endScale, float time)
     {
         float t = 0.0f;
         float rate = (1f / time) * scalingSpeed;
@@ -41,7 +41,6 @@ public class ComicsAnim : MonoBehaviour
         Debug.Log(gameObject.name);
         ComicsMeneger.sceil += 1;
         FindObjectOfType<ComicsMeneger>().SwitchStart();
-        gameObject.GetComponent<ComicsAnim>().enabled = false;
     }
 
 }
