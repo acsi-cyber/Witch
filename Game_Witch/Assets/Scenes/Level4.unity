@@ -5240,8 +5240,8 @@ MonoBehaviour:
   frog3: {fileID: 1412177291}
   timeEffectUp: {fileID: 1073251237}
   timeEffectDown: {fileID: 1347932226}
-  score_1: 10
-  score_2: 10
+  score_1: 3
+  score_2: 3
 --- !u!4 &635181542
 Transform:
   m_ObjectHideFlags: 0
@@ -5930,10 +5930,10 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.26666665}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 1412177292}
-  - {fileID: 1092666498}
   - {fileID: 2113320891}
+  - {fileID: 1092666498}
   - {fileID: 1073251240}
+  - {fileID: 1412177292}
   - {fileID: 1347932229}
   m_Father: {fileID: 1825527527}
   m_RootOrder: 0
@@ -6365,7 +6365,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 906705277}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1080944063
 GameObject:
@@ -7027,9 +7027,9 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4327788767950386494, guid: 2f9c3c26f0b9c6541a60eef3e67ee1a7, type: 3}
   m_PrefabInstance: {fileID: 1412177290}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1412177292 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5453546617142125361, guid: 2f9c3c26f0b9c6541a60eef3e67ee1a7, type: 3}
+--- !u!224 &1412177292 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1392774122805809601, guid: 2f9c3c26f0b9c6541a60eef3e67ee1a7, type: 3}
   m_PrefabInstance: {fileID: 1412177290}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1419209908
@@ -8920,7 +8920,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 906705277}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2123035064
 GameObject:

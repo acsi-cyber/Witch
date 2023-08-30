@@ -42,7 +42,6 @@ public class ComicsMeneger : MonoBehaviour
     {
         fon2.SetActive(true);
         sceil = 6;
-        DisableButton.proverca = 0;
         FindObjectOfType<ComicsMeneger>().SwitchStart();
     }
 
@@ -77,6 +76,7 @@ public class ComicsMeneger : MonoBehaviour
             case 7:
                 img6.SetActive(true);
                 StartCoroutine(FindObjectOfType<ComicsAnim1>().CorutinStart());
+                DisableButton.proverca = 0;
                 Invoke("LoadScene1", 6);
                 break;
         }
