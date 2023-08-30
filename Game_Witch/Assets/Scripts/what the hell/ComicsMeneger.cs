@@ -68,7 +68,6 @@ public class ComicsMeneger : MonoBehaviour
                 img4.SetActive(true);
                 StartCoroutine(FindObjectOfType<ComicsAnim3>().CorutinStart());
                 Invoke("LoadScene", 5);
-                sceil = 0;
                 break;
             case 6:
                 Debug.Log("6");
@@ -77,7 +76,7 @@ public class ComicsMeneger : MonoBehaviour
                 break;
             case 7:
                 img6.SetActive(true);
-                StartCoroutine(FindObjectOfType<ComicsAnim>().CorutinStart());
+                StartCoroutine(FindObjectOfType<ComicsAnim1>().CorutinStart());
                 Invoke("LoadScene1", 6);
                 break;
         }
@@ -85,7 +84,6 @@ public class ComicsMeneger : MonoBehaviour
 
     void LoadScene()
     {
-        sceil = 0;
         DisableButton.proverca = 0;
         SceneManager.LoadScene(2);
     }

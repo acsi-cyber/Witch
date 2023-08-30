@@ -15,6 +15,8 @@ public class DisableButton : MonoBehaviour
     public Button button2_4;
     public GameObject panel;
     public GameObject panel2;
+    static int provercaSceil1 = 0;
+    static int provercaSceil2 = 0;
     int i = 0;
     int levelComplete;
     public static int proverca = 0;
@@ -80,13 +82,21 @@ public class DisableButton : MonoBehaviour
 
     public void LoadTo(int level)
     {
-        if (level == 1)
+        if (level == 1 & provercaSceil1 == 0)
         {
+            Debug.Log("log");
             proverca = 1;
+            provercaSceil1++;
         }
-        else if (level == 5)
+        else if (level == 5 & provercaSceil2 == 0)
         {
             proverca = 2;
+            provercaSceil2++;
+        }
+        else if (level == 1 & provercaSceil1 == 1)
+        {
+            SceneManager.LoadScene(2);
+            return;
         }
         SceneManager.LoadScene(level);
     }

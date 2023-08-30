@@ -3279,8 +3279,8 @@ MonoBehaviour:
   frog3: {fileID: 1083557031}
   timeEffectUp: {fileID: 121169279}
   timeEffectDown: {fileID: 1167449928}
-  score_1: 10
-  score_2: 10
+  score_1: 3
+  score_2: 3
 --- !u!1 &1156383083
 GameObject:
   m_ObjectHideFlags: 0
