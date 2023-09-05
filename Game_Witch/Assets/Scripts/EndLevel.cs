@@ -87,7 +87,7 @@ public class EndLevel : MonoBehaviour
                 player.SetActive(false);
                 SceneManager.LoadScene("MainMenu");
             }
-            else if (DisableButton.proverca == 2)
+            else if (DisableButton.proverca == 2 || DisableButton.proverca == 1)
             {
                 player.SetActive(false);
                 scene1.SetActive(false);

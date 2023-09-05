@@ -1,37 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BoomAnimator2 : MonoBehaviour
 {
-    private int spriteIndex;
-    public Sprite[] sprites;
-    private SpriteRenderer spriteRenderer;
-    public GameObject Object;
-    int i = 0;
+	public Sprite[] sprites;
+	public int spritePerFrame = 6;
+	public bool loop = true;
+	public bool destroyOnEnd = false;
 
-    private void Update()
-    {
-        if (Object.activeSelf == true & i == 0)
-        {
-            spriteRenderer = GetComponent<SpriteRenderer>();
-            InvokeRepeating(nameof(AnimateSprite), 0.1f, 0.1f);
-            i++;
-        }
-        
-    }
+	private int index = 0;
+	private Image image;
+	private int frame = 0;
 
-    private void AnimateSprite()
-    {
-        spriteIndex++;
+	void Awake()
+	{
+		image = GetComponent<Image>();
+	}
 
-        if (spriteIndex >= sprites.Length)
-        {
-            CancelInvoke();
-            Object.SetActive(false);
-            return;
-        }
-
-        spriteRenderer.sprite = sprites[spriteIndex];
-    }
+	void Update()
+	{
+		if (!loop && index == sprites.Length) return;
+		frame++;
+		if (frame < spritePerFrame) return;
+		image.sprite = sprites[index];
+		frame = 0;
+		index++;
+		if (index >= sprites.Length)
+		{
+			if (loop) index = 0;
+			if (destroyOnEnd) Destroy(gameObject);
+		}
+	}
 }
