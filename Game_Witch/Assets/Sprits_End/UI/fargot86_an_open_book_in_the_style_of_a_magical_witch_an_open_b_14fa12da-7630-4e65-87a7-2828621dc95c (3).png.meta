@@ -1,0 +1,342 @@
+fileFormatVersion: 2
+guid: c4b3a6c51fef5894a8114b8fe3dc6ef8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c
+        (3)_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1045
+        width: 651
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f32bf3407781bf4da15e5543f28aeb8
+      internalID: -1430153134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c
+        (3)_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 809
+        width: 651
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32ad67a527ab1342b8c3252f86c3d5d
+      internalID: 2024239882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c
+        (3)_2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 568
+        width: 651
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096cfceb1cc0f504c90749e16137e877
+      internalID: -81981733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c
+        (3)_3
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 273
+        width: 651
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a8015ce00494845800dd402d527fc5
+      internalID: -1795591315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c
+        (3)_4
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 41
+        width: 144
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdff0c0013a7854393129abfdfe0853
+      internalID: -627493228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c
+        (3)_5
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1066
+        width: 651
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475fbedb6f63648458e1ef4886bfd25f
+      internalID: -747638709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c
+        (3)_6
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 834
+        width: 651
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7355d689371e784ca02c0ec820e8037
+      internalID: -1356090129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c
+        (3)_7
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 588
+        width: 651
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb08edcb6a4ab547b2fe46e71954fe4
+      internalID: 1655704782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c
+        (3)_8
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 296
+        width: 623
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b972d78a3d0b7d34483953116dd22e8c
+      internalID: -1642891410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c (3)_0: -1266925277
+      fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c (3)_1: 2055024592
+      fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c (3)_2: 110196530
+      fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c (3)_3: -590079059
+      fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c (3)_4: -627493228
+      fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c (3)_5: -747638709
+      fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c (3)_6: -1356090129
+      fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c (3)_7: 1655704782
+      fargot86_an_open_book_in_the_style_of_a_magical_witch_an_open_b_14fa12da-7630-4e65-87a7-2828621dc95c (3)_8: -1642891410
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

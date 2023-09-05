@@ -42,10 +42,10 @@ public class EndLevel : MonoBehaviour
             player.SetActive(true);
         }
         if (!update) return;
-        if (i < 12f & SceneManager.GetActiveScene().buildIndex != 1)
+        if (i < 13f & SceneManager.GetActiveScene().buildIndex != 1)
         {
-            size1.transform.localScale = new Vector3(23f, i, 1f);
-            size2.transform.localScale = new Vector3(23f, i, 1f);
+            size1.transform.localScale = new Vector3(150f, i, 1f);
+            size2.transform.localScale = new Vector3(150f, i, 1f);
             i += 0.1f;
         }
         else if (i > 1f & SceneManager.GetActiveScene().buildIndex == 1)
@@ -71,8 +71,8 @@ public class EndLevel : MonoBehaviour
                 scene1.SetActive(true);
                 scene2.SetActive(false);
             }
-            size1.transform.localScale = new Vector3(23f, i, 1f);
-            size2.transform.localScale = new Vector3(23f, i, 1f);
+            size1.transform.localScale = new Vector3(150f, i, 1f);
+            size2.transform.localScale = new Vector3(150f, i, 1f);
             i -= 0.1f;
         }
     }
